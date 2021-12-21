@@ -1,0 +1,16 @@
+{
+  "name": "jitsy-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.1",
+    "parcel": "2.0.1",
+    "sass": "1.44.0"
+  },
+  "browserslist": ["> 0.5%", "last 2 versions", "not dead"]
+}

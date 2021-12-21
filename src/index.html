@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="style.scss" />
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="vendor/1300/lib-jitsi-meet.min.js"></script>
+	<script type="module" src="app.js"></script>
+</head>
+<body>
+<div class="welcome" id="welcome">
+	<div class="welcome__container">
+		<div class="welcome__title">Input room name</div>
+		<input class="welcome__input" id="room_name_input" type="text">
+		<button class="welcome__btn"  id="btn_room_name">submit</button>
+	</div>
+</div>
+<div class="room" id="room" style="display: none">
+	<div class="room__actions">
+		<button id="start">Start</button>
+		<button id="stop" style="display: none">Stop</button>
+		<div class="room__selects">
+			<select id="select_video"></select>
+			<select id="select_audio"></select>
+		</div>
+	</div>
+	<div class="room__media" id="media_container"></div>
+</div>
+</body>
+</html>

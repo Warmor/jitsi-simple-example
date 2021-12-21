@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+}
+
+.welcome {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.welcome__container {
+	padding: 60px 100px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.welcome__title {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.welcome__input {
+	margin-bottom: 10px;
+}
+
+.welcome__btn {
+}
+
+.room {
+	width: 100%;
+}
+
+.room__actions {
+	width: 100%;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+
+	button {
+		font-size: 18px;
+	}
+}
+
+.room__selects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	select {
+		width: 300px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+}
+
+.room__media {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 10px;
+
+	audio {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	video {
+		width: 360px;
+		height: 240px;
+		object-fit: contain;
+		background-color: black;
+		border: 5px solid #fff;
+	}
+}
